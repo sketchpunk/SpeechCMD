@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="sp.ui.EditableTextBlock"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d"
+			 xmlns:local="clr-namespace:sp.ui"
+			 x:Name="usrControl">
+	<UserControl.Resources>
+		<DataTemplate x:Key="EditTemplate">
+			<TextBox Margin="0" BorderThickness="1"
+				KeyDown="TextBox_KeyDown" Loaded="TextBox_Loaded" LostFocus="TextBox_LostFocus"
+				Text="{Binding ElementName=usrControl, Path=Text, UpdateSourceTrigger=PropertyChanged}"/>
+		</DataTemplate>
+		
+		<DataTemplate x:Key="ViewTemplate">
+			<TextBlock Text="{Binding ElementName=usrControl, Path=Text}"/>
+		</DataTemplate>
+	
+        <Style TargetType="{x:Type local:EditableTextBlock}"><Style.Triggers>
+			<Trigger Property="IsInEditMode" Value="True"><Setter Property="ContentTemplate" Value="{StaticResource EditTemplate}"/></Trigger>
+			<Trigger Property="IsInEditMode" Value="False"><Setter Property="ContentTemplate" Value="{StaticResource ViewTemplate}" /></Trigger>
+		</Style.Triggers></Style>
+	</UserControl.Resources>
+</UserControl>

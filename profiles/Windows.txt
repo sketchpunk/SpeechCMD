@@ -1,0 +1,215 @@
+{
+  "Commands": [
+    {
+      "Name": "Copy",
+      "Synth": "ok",
+      "AudioPath": "",
+      "Grammar": [
+        "copy"
+      ],
+      "Actions": [
+        {
+          "Type": "kb",
+          "Data": "LCTRL c"
+        }
+      ]
+    },
+    {
+      "Name": "Paste",
+      "Synth": "ok",
+      "AudioPath": "",
+      "Grammar": [
+        "paste"
+      ],
+      "Actions": [
+        {
+          "Type": "kb",
+          "Data": "LCTRL v"
+        }
+      ]
+    },
+    {
+      "Name": "Cut",
+      "Synth": "ok",
+      "AudioPath": "",
+      "Grammar": [
+        "cut"
+      ],
+      "Actions": [
+        {
+          "Type": "kb",
+          "Data": "LCTRL x"
+        }
+      ]
+    },
+    {
+      "Name": "Compile",
+      "Synth": "Compiling Now",
+      "AudioPath": "",
+      "Grammar": [
+        "end process"
+      ],
+      "Actions": [
+        {
+          "Type": "kb",
+          "Data": "F5"
+        }
+      ]
+    },
+    {
+      "Name": "DesktopNext",
+      "Synth": "",
+      "AudioPath": "",
+      "Grammar": [
+        "right desktop"
+      ],
+      "Actions": [
+        {
+          "Type": "kb",
+          "Data": "LWIN LCTRL RIGHT"
+        }
+      ]
+    },
+    {
+      "Name": "DesktopPrev",
+      "Synth": "",
+      "AudioPath": "",
+      "Grammar": [
+        "left desktop"
+      ],
+      "Actions": [
+        {
+          "Type": "kb",
+          "Data": "LWIN LCTRL LEFT"
+        }
+      ]
+    },
+    {
+      "Name": "File",
+      "Synth": "",
+      "AudioPath": "",
+      "Grammar": [
+        "open file explorer"
+      ],
+      "Actions": [
+        {
+          "Type": "kb",
+          "Data": "LWIN e"
+        }
+      ]
+    },
+    {
+      "Name": "Windows : Hide",
+      "Synth": "",
+      "AudioPath": "",
+      "Grammar": [
+        "hide windows"
+      ],
+      "Actions": [
+        {
+          "Type": "kb",
+          "Data": "LWIN m"
+        }
+      ]
+    },
+    {
+      "Name": "Windows : Show",
+      "Synth": "",
+      "AudioPath": "",
+      "Grammar": [
+        "unhide windows"
+      ],
+      "Actions": [
+        {
+          "Type": "kb",
+          "Data": "LWIN LSHIFT m"
+        }
+      ]
+    },
+    {
+      "Name": "Windows : Close",
+      "Synth": "",
+      "AudioPath": "",
+      "Grammar": [
+        "close window"
+      ],
+      "Actions": [
+        {
+          "Type": "kb",
+          "Data": "ALT F4"
+        }
+      ]
+    },
+    {
+      "Name": "Computer",
+      "Synth": "Yes Pedro",
+      "AudioPath": "",
+      "Grammar": [
+        "computer"
+      ],
+      "Actions": [
+        {
+          "Type": "kb",
+          "Data": "LCTRL x"
+        }
+      ]
+    },
+    {
+      "Name": "Startup : Notepad",
+      "Synth": "Running Notepad now",
+      "AudioPath": "",
+      "Grammar": [
+        "startup notepad"
+      ],
+      "Actions": [
+        {
+          "Type": "cmd",
+          "Data": "C:\\Windows\\System32\\Notepad.exe"
+        }
+      ]
+    },
+    {
+      "Name": "Confirm",
+      "Synth": "",
+      "AudioPath": "",
+      "Grammar": [
+        "confirm"
+      ],
+      "Actions": [
+        {
+          "Type": "kb",
+          "Data": "SPACE"
+        }
+      ]
+    },
+    {
+      "Name": "Left",
+      "Synth": "",
+      "AudioPath": "",
+      "Grammar": [
+        "move left"
+      ],
+      "Actions": [
+        {
+          "Type": "kb",
+          "Data": "LEFT"
+        }
+      ]
+    },
+    {
+      "Name": "Right",
+      "Synth": "",
+      "AudioPath": "",
+      "Grammar": [
+        "move right"
+      ],
+      "Actions": [
+        {
+          "Type": "kb",
+          "Data": "RIGHT"
+        }
+      ]
+    }
+  ],
+  "Name": "Windows"
+}

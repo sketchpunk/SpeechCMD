@@ -1,0 +1,18 @@
+﻿JSON Profile 
+
+{
+	name:"Profile Name"
+	,commands:[
+		{name:"Hyperdrive"
+			,synth:"Yes Sir"
+			,grammar:["engadge hyperdrive","disengage hyperdrive","full warp speed"]
+			,actions:[
+				{type:"kb",data:"ctrl+i"}
+				,{type:"script", data:"scripts/kewl.cs"}
+				,{type:"cmd", data:"c:/something.bat"}
+			]
+		}
+	
+	]
+
+}
