@@ -28,7 +28,7 @@ namespace sp{
 			private Dictionary<string,Profile> mProfileList;
 
 			private bool mIsActive = false;
-			private float mConfidenceMin = 0.9f;
+			private float mConfidenceMin = 0.85f;
 
 			public bool IsActive{ get {return mIsActive;} }
 			public int GrammarCount { get { return mGrammarList.Count; } }
